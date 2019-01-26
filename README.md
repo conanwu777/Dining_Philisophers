@@ -13,14 +13,18 @@ The dining philosophers problem is an example problem often used in concurrent a
   **sleep:** takes time SLEEP_T and holds no chopsticks, required after eating
   
   **think:** they drift into deep contemplation about life and the universe when they hold exactly one chopstick, thinking is not required in the life of a philisopher =)
-  
+
+* Philisophers die when their HP drops down to 0 (including 0)
 * The goal is to keep all philisophers alive for a set time MAX_TIME (or indefinitely if MAX_TIME is set to 0)
 * Philisophers cannot communicate to each other or inspect the state of other philisophers
 
 ## Demo
 
+* They can live stablely with MAXLIFE = 7, EAT_T = 2 and SLEEP_T = 1
 ![animation](CoolGIF.gif)
 
+* They die with MAXLIFE = 7, EAT_T = 5 and SLEEP_T = 2 (one needs MAX_LIFE at leat 12 for that, more to compensate threads does not running at the same speed)
+![animation](die.gif)
 
 ## Implementation
 
