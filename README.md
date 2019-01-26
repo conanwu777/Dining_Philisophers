@@ -8,11 +8,11 @@ The dining philosophers problem is an example problem often used in concurrent a
 * There is a single chopstick between each pair of adjecent philisophers
 * Philisophers can EAT, SLEEP and THINK, while not eating, they lose one HP per second:
 
-  **eat:** takes time EAT_T to complete and requires holding both (left and right) chopsticks
+  **-eat:** takes time EAT_T to complete and requires holding both (left and right) chopsticks
   
-  **sleep:** takes time SLEEP_T and holds no chopsticks, required after eating
+  **-sleep:** takes time SLEEP_T and holds no chopsticks, required after eating
   
-  **think:** they drift into deep contemplation about life and the universe when they hold exactly one chopstick, thinking is not required in the life of a philisopher =)
+  **-think:** they drift into deep contemplation about life and the universe when they hold exactly one chopstick, thinking is not required in the life of a philisopher =)
 
 * Philisophers die when their HP drops down to 0 (including 0)
 * The goal is to keep all philisophers alive for a set time MAX_TIME (or indefinitely if MAX_TIME is set to 0)
